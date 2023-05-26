@@ -5,7 +5,7 @@ For example I hooked MessageBoxW.
 
 # Injection
 Code:
-[code]
+```cpp
     WCHAR* TARGET_PATH = L"target.exe";
     CHAR* DLL_PATH = "dll.dll";
     STARTUPINFOW startupInfo = { sizeof(startupInfo) };
@@ -23,4 +23,4 @@ Code:
         CloseHandle(processInfo.hThread);
         CloseHandle(processInfo.hProcess);
     }
-[/code]
+```
